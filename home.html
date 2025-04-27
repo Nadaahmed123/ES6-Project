@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metro Shop</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container container">
+      <a href="home.html" class="logo">
+        <img src="images/logo-dark.png" alt="Metro Shop Logo">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+
+        <li class="user-info">
+          <span id="username-display"></span>
+          <a href="#" id="logout">Logout</a>
+        </li>
+      </ul>
+      
+      <div class="nav-icons">
+        <div class="wishlist-icon">
+          <i class="far fa-heart"></i>
+          <span class="wishlist-count">0</span>
+        </div>
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+      
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <div class="cart-overlay">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <i class="fas fa-times close-cart"></i>
+      </div>
+      
+      <div class="cart-items" id="cart-items">
+      </div>
+      
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2 class="hero-subtitle">COLLECTION</h2>
+      <h1 class="hero-title">Exclusive <span>Winter</span></h1>
+      <p class="hero-text">New Modern Stylist Fashionable Women's wear holder bag holder.</p>
+      <button class="hero-btn">SHOP NOW</button>
+    </div>
+  </section>
+  
+  <div class="collection">
+    <div class="collection-big-card all-collection">
+       <img src="images/collection img1.png" class="women-img" alt=""> 
+       <div class="collection-text">
+        <p>HOT</p>
+        <h1>WOMEN's</h1>
+       </div>
+    </div>
+    <div class="small-collection-card all-collection">
+         <div class="collection-small-card all-collection">
+            <img src="images/collection img3.png" alt="">
+            <div class="collection-small-card-text">
+                <p>COLLECTION</p>
+                <h1>BAGS</h1>
+            </div>
+         </div>
+
+          <div class="collection-small-card all-collection">
+            <img src="images/collection img4.png" alt="" class="speaker-img">
+            <div class="collection-small-card-text change-text">
+                <p>BLUETOOTH</p>
+                <h1>SPEAKER</h1>
+            </div>
+         </div>
+    </div>
+
+     <div class="collection-big-card all-collection last-cell-size">
+        <img src="images/collection img2.png" class="mens-img" alt="">
+        <div class="collection-text change-last-cell">
+            <p>TRENDING SHIRTS</p>
+            <h1>MEN'S</h1>
+        </div>
+     </div>
+ </div>
+  
+  <section class="products">
+    <div class="container">
+      <h2 class="section-title">Our Top Collection</h2>
+      
+      <div class="product-filters">
+        <a href="#" data-category="women">Women</a>
+        <a href="#" data-category="men">Men</a>
+        <a href="#" data-category="sports">Sports</a>
+
+        <a href="#" data-category="All" class="active">All</a>
+      </div>
+      
+      
+      <div class="products-grid">
+      </div>
+    </div>
+  </section>
+  
+<section class="gender-container">
+  <div class="genders">
+    <div class="female hover-gender">
+      <img src="images/tranding models.jpg" alt="">
+      <div class="gender-text">
+        <h2>Women's</h2>
+        <p>Trending 2025</p>
+      </div>
+    </div>
+    <div class="male hover-gender">
+      <img src="images/tranding models2.jpg" alt="">
+      <div class="gender-text">
+        <h2>Men's</h2>
+        <p>Trending 2025</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-blog-heading-text">
+    <h1>Inspirational Posts</h1>
+  </div>
+</section>
+  
+  <section class="blog">
+    <div class="container">
+      <h2 class="section-title">Inspirational Posts</h2>
+      
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="images/blog-post1.jpg" alt="Fashion Post" class="blog-img">
+          <span class="blog-date">Dec 23, 2025</span>
+          <div class="blog-content">
+            <p class="blog-category">Fashion, Modern</p>
+            <h3 class="blog-title">The City Of London Wants to Have</h3>
+          </div>
+        </div>
+        
+        <div class="blog-card">
+          <img src="images/blog-post2.jpg" alt="Fashion Post" class="blog-img">
+          <span class="blog-date">Dec 23, 2025</span>
+          <div class="blog-content">
+            <p class="blog-category">Fashion, Modern</p>
+            <h3 class="blog-title">The City Of London Wants to Have</h3>
+          </div>
+        </div>
+        
+        <div class="blog-card">
+          <img src="images/blog-post3.jpg" alt="Fashion Post" class="blog-img">
+          <span class="blog-date">Dec 23, 2025</span>
+          <div class="blog-content">
+            <p class="blog-category">Fashion, Modern</p>
+            <h3 class="blog-title">The City Of London Wants to Have</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Newsletter!</h2>
+        <p class="newsletter-text">It only takes a second to be the first to find out about our latest news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo-light.png" alt="Metro Shop Logo">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>59 street, Newyork city, ROse Town, 05 Rive House</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>+123 456 7890</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>info@example.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Accounts</a></li>
+            <li><a href="#">Login/Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">WishList</a></li>
+            <li><a href="#">Order history</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Latest Post</a></li>
+            <li><a href="#">Salling Tips</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="#">How To Shop</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Privacy & Cookie Policy</a></li>
+          </ul>
+          
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fas fa-rss"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          
+          <div class="payment-methods">
+            <img src="images/payment1.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment2.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment3.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment4.png" alt="Payment Method" class="payment-method">
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="footer-bottom">
+        <p class="copyright">© Copyright Metro 2025. by <span>Nada Ahmed</span></p>
+      </div> -->
+    </div>
+    <a href="#" class="go-top" title="Go to Top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+  
+  <script src="home.js"></script>
+</body>
+</html>

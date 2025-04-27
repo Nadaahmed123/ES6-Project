@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="About.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+</head>
+<body>
+ 
+     <header>
+      <div class="nav-container container">
+        <a href="index.html" class="logo">
+          <img src="images/logo-dark.png" alt="Metro Shop Logo">
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Product</a></li>
+  
+          <li class="user-info">
+            <span id="username-display"></span>
+            <a href="#" id="logout">Logout</a>
+          </li>
+        </ul>
+        
+        <div class="nav-icons">
+          <div class="wishlist-icon">
+            <i class="far fa-heart"></i>
+            <span class="wishlist-count">0</span>
+          </div>
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+        
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="cart-overlay">
+      <div class="cart-sidebar">
+        <div class="cart-header">
+          <h2>Shopping Cart</h2>
+          <i class="fas fa-times close-cart"></i>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+        </div>
+        
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+          </div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+      <div class="about-client">
+          <div class="left-side-contain">
+              <h1>Who We Are</h1>
+              <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a 
+                  dictum tristique. Nullam urna metus, vestibulum ac sodales e Sed ut perspiciatis unde
+                   omnis iste natus error sit voluptatem accusantium doloremque laudantium totam 
+                   reamutrum. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed perspiciatis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Ut blandit nisi a dictum tristique.</p>
+                     <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a 
+                      dictum tristique. Nullam urna metus, vestibulum ac sodales e Sed ut perspiciatis unde
+                       omnis iste natus error sit voluptatem accusantium doloremque laudantium totam 
+                       reamutrum. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed perspiciatis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Ut blandit nisi a dictum tristique.</p>
+              <div class="take-your-btn">
+                  <h3>TAKE A TOUR</h3>
+                  <i class="fa-solid fa-angle-right"></i>
+              </div>
+          </div>
+          <div class="right-side-contain">
+              <img src="images/aboute client.jpg" alt="About Our Clients">
+          </div>
+      </div>
+      <div class="shop-form-us">
+          <div class="contain-text">
+              <h1>Why Shop From Us</h1>
+          </div>
+          <div class="shop-service-box">
+              <!-- box 1 -->
+              <div class="box1">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <h2>FREE SHIPPING</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+               <!-- box 2 -->
+               <div class="box1">
+                  <i class="fa-solid fa-headset"></i>                <h2>24/7 SUPPORT</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+               <!-- box 3 -->
+               <div class="box1">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                  <h2>FASY RETURN</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              
+          </div>
+      </div>
+      <div class="contact-section">
+          <div class="contain">
+              <h1>We Deliver Genuine Products</h1>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the printer took a galley. Simply the text of the printing and typesetting industry.</p>
+              <button class="contact-btn">CONTACT US</button>
+          </div>
+      </div>
+      <div class="blog-brand-section">
+          <div class="blog-text">
+              <p>Once we ordered some electronics items and we got the products delivered at our doorstep. The customer support was super helpful and they answered all my queries.</p>
+          
+          <div class="blog-img-contain">
+              <div class="left-img">
+                  <img src="images/blog.jpg" alt="Customer with electronics package">
+              </div>
+         
+              <div class="right-cont">
+                  <h3>Sophia Loren</h3>
+                  <p>Artist</p>
+              </div>
+          </div>
+      </div>
+      <!-- Slider -->
+      <div class="swiper sliders">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/brand2.png" alt="Brand logo or product">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/brand5.png" alt="Brand logo or product">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/brand5.png" alt="Brand logo or product">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/brand6.png" alt="Brand logo or product">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/brand2.png" alt="Brand logo or product">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/brand2.png" alt="Brand logo or product">
+            </div>
+          </div>
+        </div>
+        
+  
+  
+      </div>
+    </div>
+    <div class="about-client">
+        <div class="left-side-contain">
+            <h1>Who We Are</h1>
+            <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a 
+                dictum tristique. Nullam urna metus, vestibulum ac sodales e Sed ut perspiciatis unde
+                 omnis iste natus error sit voluptatem accusantium doloremque laudantium totam 
+                 reamutrum. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Sed perspiciatis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                   Ut blandit nisi a dictum tristique.</p>
+                   <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a 
+                    dictum tristique. Nullam urna metus, vestibulum ac sodales e Sed ut perspiciatis unde
+                     omnis iste natus error sit voluptatem accusantium doloremque laudantium totam 
+                     reamutrum. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed perspiciatis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Ut blandit nisi a dictum tristique.</p>
+            <div class="take-your-btn">
+                <h3>TAKE A TOUR</h3>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <div class="right-side-contain">
+            <img src="images/aboute client.jpg" alt="About Our Clients">
+        </div>
+    </div>
+    <div class="shop-form-us">
+        <div class="contain-text">
+            <h1>Why Shop From Us</h1>
+        </div>
+        <div class="shop-service-box">
+            <!-- box 1 -->
+            <div class="box1">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>FREE SHIPPING</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+             <!-- box 2 -->
+             <div class="box1">
+                <i class="fa-solid fa-headset"></i>                <h2>24/7 SUPPORT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+             <!-- box 3 -->
+             <div class="box1">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h2>FASY RETURN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="contact-section">
+        <div class="contain">
+            <h1>We Deliver Genuine Products</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the printer took a galley. Simply the text of the printing and typesetting industry.</p>
+            <button class="contact-btn">CONTACT US</button>
+        </div>
+    </div>
+    <div class="blog-brand-section">
+        <div class="blog-text">
+            <p>Once we ordered some electronics items and we got the products delivered at our doorstep. The customer support was super helpful and they answered all my queries.</p>
+        
+        <div class="blog-img-contain">
+            <div class="left-img">
+                <img src="images/blog.jpg" alt="Customer with electronics package">
+            </div>
+       
+            <div class="right-cont">
+                <h3>Sophia Loren</h3>
+                <p>Artist</p>
+            </div>
+        </div>
+    </div>
+    <!-- Slider -->
+    <div class="swiper sliders">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/brand2.png" alt="Brand logo or product">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brand5.png" alt="Brand logo or product">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brand5.png" alt="Brand logo or product">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brand6.png" alt="Brand logo or product">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brand2.png" alt="Brand logo or product">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/brand2.png" alt="Brand logo or product">
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+
+
+
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo-light.png" alt="Metro Shop Logo">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>59 street, Newyork city, ROse Town, 05 Rive House</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>+123 456 7890</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>info@example.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Accounts</a></li>
+            <li><a href="#">Login/Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">WishList</a></li>
+            <li><a href="#">Order history</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Latest Post</a></li>
+            <li><a href="#">Salling Tips</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="#">How To Shop</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Privacy & Cookie Policy</a></li>
+          </ul>
+          
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fas fa-rss"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          
+          <div class="payment-methods">
+            <img src="images/payment1.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment2.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment3.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment4.png" alt="Payment Method" class="payment-method">
+          </div>
+        </div>
+      </div>
+<!--       
+      <div class="footer-bottom">
+        <p class="copyright">© Copyright Metro 2025. by <span>Nada Ahmed</span></p>
+      </div> -->
+    </div>
+    <a href="#" class="go-top" title="Go to Top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    
+  
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="home.js"></script>
+  
+
+  
+</body>
+
+</html>

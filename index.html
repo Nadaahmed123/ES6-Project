@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+  </div>
+  
+  <div class="login">
+    
+    <div class="login__img">
+      <img src="https://cdn.pixabay.com/photo/2020/05/21/11/13/design-5200290_1280.jpg" alt="Login Image">
+    </div>
+
+    <div class="login__content">
+      <div class="login__forms">
+        
+       
+       
+        <form class="login__registre block" id="login-in">
+          <h1 class="login__title">Sign In</h1>
+          <div class="login__box">
+            <i class='bx bx-user login__icon'></i>
+            <input type="text" id="login-username" placeholder="Username or Email" class="login__input" required>
+          </div>
+          <div id="login-username-error" class="error-message"></div>
+          
+          <div class="login__box">
+            <i class='bx bx-lock-alt login__icon'></i>
+            <input type="password" id="login-password" placeholder="Password" class="login__input" required>
+          </div>
+          <div id="login-password-error" class="error-message"></div>
+          
+          <button type="submit" class="login__button" id="login-btn">Sign In</button>
+          
+          <div id="login-error" class="error-message" style="text-align: center;"></div>
+          
+          <div>
+            <span class="login__account">Don't have an Account?</span>
+            <span class="login__signin" id="sign-up">Sign Up</span>
+          </div>
+        </form>
+
+     
+        <form class="login__create none" id="login-up">
+          <h1 class="login__title">Create Account</h1>
+          <div class="login__box">
+            <i class='bx bx-user login__icon'></i>
+            <input type="text" id="signup-username" placeholder="Username" class="login__input" required>
+          </div>
+          <div id="signup-username-error" class="error-message"></div>
+          
+          <div class="login__box">
+            <i class='bx bx-at login__icon'></i>
+            <input type="email" id="signup-email" placeholder="Email" class="login__input" required>
+          </div>
+          <div id="signup-email-error" class="error-message"></div>
+          
+          <div class="login__box">
+            <i class='bx bx-lock-alt login__icon'></i>
+            <input type="password" id="signup-password" placeholder="Password" class="login__input" required>
+          </div>
+          <div id="signup-password-error" class="error-message"></div>
+          
+          <div class="login__box">
+            <i class='bx bx-lock-alt login__icon'></i>
+            <input type="password" id="signup-password-confirm" placeholder="Confirm Password" class="login__input" required>
+          </div>
+          <div id="signup-confirm-error" class="error-message"></div>
+          
+          <div id="signup-success" class="success-message"></div>
+          <div id="signup-error" class="error-message" style="text-align: center;"></div>
+          
+          <button type="submit" class="login__button" id="signup-btn">Sign Up</button>
+          
+          <div>
+            <span class="login__account">Already have an Account?</span>
+            <span class="login__signup" id="sign-in">Sign In</span>
+          </div>
+          
+          <div class="login__social">
+            <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
+            <a href="#" class="login__social-icon"><i class='bx bxl-facebook'></i></a>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>

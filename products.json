@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "whiht shirt 1",
+      "price": 120,
+      "size":"S",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/991509/pexels-photo-991509.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": 2,
+      "title": "whight tshirt 2",
+      "price": 90,
+      "size":"M",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/6786614/pexels-photo-6786614.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": 3,
+      "title": "Running Shoes",
+      "price": 75,
+      "size":"XL",
+      "category": "men",
+      "image": "https://images.pexels.com/photos/19290427/pexels-photo-19290427/free-photo-of-man-wearing-a-white-jacket.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+
+    },
+    {
+      "id": 4,
+      "title": "whight tshirt 2",
+      "price": 45,
+      "size":"L",
+      "category": "women",
+      "image": "https://images.pexels.com/photos/30095400/pexels-photo-30095400/free-photo-of-fashionable-woman-in-artistic-butterfly-t-shirt.jpeg?auto=compress&cs=tinysrgb&w=600"
+
+    }
+  ]
+  

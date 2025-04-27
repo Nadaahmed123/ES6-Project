@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Metro Shop</title>
+  
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+  <header class="checkout-header">
+    <h1>Checkout</h1>
+    <div class="checkout-user">
+      Logged in as: <span id="checkout-username">Guest</span>
+      <button id="logout" class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="checkout-container">
+    <section id="checkout-items" class="checkout-items">
+    
+    </section>
+
+    <aside class="checkout-summary">
+      <h2>Order Summary</h2>
+      <p>Total: <span id="checkout-total">$0.00</span></p>
+      <button id="place-order" class="checkout-btn">Place Order</button>
+      <button id="cancel-order" class="cancel-btn">Cancel</button>
+    </aside>
+  </main>
+
+  <script src="checkout.js"></script>
+
+</body>
+</html>

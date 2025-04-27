@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="nav-container container">
+      <a href="home.html" class="logo">
+        <img src="images/logo-dark.png" alt="Metro Shop Logo">
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+       
+        <li><a href="product.html">Product</a></li>
+        <li class="user-info">
+          <span id="username-display"></span>
+          <a href="#" id="logout">Logout</a>
+        </li>
+      </ul>
+      
+      <div class="nav-icons">
+        <div class="wishlist-icon">
+          <i class="far fa-heart"></i>
+          <span class="wishlist-count">0</span>
+        </div>
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+      
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <div class="cart-overlay">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <i class="fas fa-times close-cart"></i>
+      </div>
+      
+      <div class="cart-items" id="cart-items">
+      </div>
+      
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+ 
+  <section class="products">
+    <div class="container">
+      <h2 class="section-title">Our Top Collection</h2>
+      
+      <div class="product-filters-container">
+        <div class="filter-sidebar">
+          <h3>Filters</h3>
+          
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Category</h4>
+            <div class="filter-options">
+              <label>
+                <input type="checkbox" name="category" value="women" checked> Women
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="men" checked> Men
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="sports" checked> Sports
+              </label>
+            </div>
+          </div>
+          
+          <!-- Size Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Size</h4>
+            <div class="filter-options">
+              <label>
+                <input type="checkbox" name="size" value="S" checked> S
+              </label>
+              <label>
+                <input type="checkbox" name="size" value="M" checked> M
+              </label>
+              <label>
+                <input type="checkbox" name="size" value="L" checked> L
+              </label>
+              <label>
+                <input type="checkbox" name="size" value="XL" checked> XL
+              </label>
+            </div>
+          </div>
+          
+          <!-- Price Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Price Range</h4>
+            <div class="price-range">
+              <input type="range" id="price-slider" min="0" max="500" value="500" step="10">
+              <div class="price-values">
+                <span>$0</span>
+                <span id="max-price-display">$500</span>
+              </div>
+            </div>
+          </div>
+          
+          <button class="apply-filters-btn">Apply Filters</button>
+          <button class="reset-filters-btn">Reset Filters</button>
+        </div>
+        
+        <div class="products-main">
+          <div class="product-filters">
+            <a href="#" data-category="women">Women</a>
+            <a href="#" data-category="men">Men</a>
+            <a href="#" data-category="sports">Sports</a>
+            <a href="#" data-category="all" class="active">All</a>
+          </div>
+          
+          <div class="products-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo-light.png" alt="Metro Shop Logo">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>59 street, Newyork city, ROse Town, 05 Rive House</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>+123 456 7890</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <span>info@example.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Accounts</a></li>
+            <li><a href="#">Login/Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">WishList</a></li>
+            <li><a href="#">Order history</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Latest Post</a></li>
+            <li><a href="#">Salling Tips</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="#">How To Shop</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Privacy & Cookie Policy</a></li>
+          </ul>
+          
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fas fa-rss"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          
+          <div class="payment-methods">
+            <img src="images/payment1.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment2.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment3.png" alt="Payment Method" class="payment-method">
+            <img src="images/payment4.png" alt="Payment Method" class="payment-method">
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="footer-bottom">
+        <p class="copyright">© Copyright Metro 2025. by <span>Nada Ahmed</span></p>
+      </div> -->
+    </div>
+    <a href="#" class="go-top" title="Go to Top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+  
+
+    <script src="home.js"></script>
+    
+</body>
+</html>
